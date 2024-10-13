@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4; 
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+}
+
+
+#populationChart {
+    width: 100%; 
+    height: 300px; 
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    background-color: #ffffff; 
+}
+
+.select-container {
+    margin: 10px 0; 
+}
+
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    font-size: 16px; 
+    background-color: #ffffff; 
+}
+
+
+h1 {
+    color: #333;
+}
+
+
+.axis-label {
+    font-size: 14px;
+    color: #666; 
+}
+
+    .circular-chart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #ccc; 
+        position: relative;
+        overflow: hidden;
+    }
+
+    .circular-chart .fill {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        clip: rect(0px, 50px, 100px, 0px);
+        transform-origin: center;
+        background-color: blue; 
+    }
+
+    #inventoryChart {
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .kpis {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .kpis p {
+        padding: 5px;
+        text-align: center;
+    }

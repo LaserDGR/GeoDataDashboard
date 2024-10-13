@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Prueba</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.23/esri/themes/light/main.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://js.arcgis.com/4.23/"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <h3>KPI's</h3>
+    <div class="kpis">
+        <p>Total de Proyectos: <br> <span id="totalProjects">0</span></p>
+        <p>UDS Totales: <br> <span id="totalUnits">0</span></p>
+        <p>UDS Disponibles: <br> <span id="totalAvailableUnits">0</span></p>
+        <p>Promedio $/UD: <br> <span id="averagePricePerUnit">0.00</span></p>
+    </div>
+    
+    <div id="map" style="width: 100%; height: 500px;"></div>
+    <select id="municipalitySelect" style="margin: 20px;">
+        <option value="">Seleccione un municipio</option>
+    </select>
+    <canvas id="populationChart" width="800" height="400" style="margin: auto; display: block;"></canvas>
+    <div id="inventoryChart"></div>
+</body>
+</html>
